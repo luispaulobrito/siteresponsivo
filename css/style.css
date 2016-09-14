@@ -36,6 +36,7 @@ img{
 
 /*MENU*/
 .menu{
+    display: none;/* NAO MOSTRAR MENU */
     width: 100%;
     height: 100%;
     position: fixed;
@@ -43,17 +44,78 @@ img{
     top:0;
     left: 0;
 }
-.btn-close{
-    font-size: 3em;
-    color: #fff;
-    float: right;
+.btn-close{/*BOTAO FECHAR*/
+    font-size: 1.5em;/*TAMANHO*/
+    color: #fff;/*COR BRNACA*/
+    float: right;/*FICA NA DIREITA*/
     cursor: pointer;
+    margin: 2% 3% 0 0;/*AUMENTA A DISTANCIA DA LATERAL E DO TOPO*/
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;/*COLOCA MENU NO MEIO */
+}
+.menu li{
+    padding: 1.5%;/* ESPAÇAMENTO DOS ITENS DO MENU */
+}
+.menu li a{
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%; /* DISTANCIA NA PARTE SUPERIOR E BASE E LATERAIS */
+}
+.menu li a:hover{
+    border: 1px solid #da6709;/*adiciona RRETANGULO EM VOLTA DE CADA ITEM DO MENU QUANDO COLOCA MOUSE EM CIMA*/
 }
 
-
-
-
-
+/*BANNER*/
+.banner{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background: url("../img/bg.jpg")no-repeat fixed;
+}
+.title {
+    width: 100%
+}
+.title h2{
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700; /*PREENCHIMENTO DA FONTE*/
+}
+.title h3{
+    font-size: 1.5em;
+    color: #fff;
+}
+.buttons{
+    width: 100%;
+}
+.buttons i{
+    float: right;
+    margin-top: 2%;
+}
+.btn-cadastrar{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #130400;
+}
+.btn-sobre{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #130400;
+    color: #fff;
+    margin-top: 2%;
+}
 
 
 
