@@ -197,3 +197,112 @@ img{
     margin-top: 2%;
     color: rgba(255,255,255,0.7);
 }
+
+/*-------------MOBILE FIRST-----------------*/
+/*SMALL DEVICES - SMARTPHONES*/
+@media screen and (min-width: 480px){
+    .logo {width: 214px; background: url(../img/logo.png) center center/214px no-repeat;/*TROCA A LOGO PELA MAIOR EM OUTRA RESOLUCAO*/
+    }
+    .btn{
+        font-size: 2em;/*AUMENTA TAMANHO DA FONTE NOS BOTOES*/
+    }
+}
+
+/*SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px){
+    .servico{
+        width: 49%;/*DIMINUI TAMANHO DE SERVICOS PARA OCUPAR APENAS METADE DA TELA*/
+        float: left;
+        margin-right: 2%;
+    }
+    .servico:nth-child(2){
+        margin-right: 0;/*TIRA MARGEM DO SEEGUNDO SERVICO PARA ELE ENCAIXAR EM CIMA*/
+    }
+    .newsletter h2{
+        font-size: 2em;/*AUMENTA TAMANHO FONTE NA NEWSLETTER*/
+    }
+    .newsletter h3{
+        font-size: 1.5em;/*AUMENTA TAMANHO FONTE NA NEWSLETTER*/
+    }
+    .newsletter input{/*COLOCA INPUT E BOTA NA MESMA OCUPANDO MESMA LINHA*/
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+    .newsletter button{
+        width: 29%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+}
+
+/*MEDIUM DEVICES - TABLETS E DESKTOPS*/
+@media screen and (min-width: 768px) {/*COLOCA TITULO E BOTOES DO BANNER OCUPANDO MESMA LINHA*/
+    .title{
+        width: 70%;
+        float: left;
+        text-align: left;
+    }
+    .title h2{
+        font-size: 3em;
+    }
+    .title h3{
+        font-size: 2em;
+    }
+    .buttons{
+        width: 30%;
+        float: right;
+        margin-top: 0;
+    }
+    .servico{
+        width: 32%;/*COLOCA TRES SERVICOS OCUPANDO MESMA LINHA EM VEZ DE DOIS*/
+    }
+    .servico:nth-child(2){
+        margin-right: 2%;/*COLOCA MARGEM DO SEGUNDO SERVICO PARA O TERCEIRO NAO FICAR COLADO*/
+    }
+    .servico:nth-child(3){
+        margin-right: 0;/*TIRA MARGEM DO TERCEIRO SERVICO PARA ELE ENCAIXAR EM CIMA*/
+    }
+    .newsletter input{
+        width: 60%;
+        float: none;
+    }
+    .newsletter button{
+        width: 20%;
+        float: none;
+    }
+}
+
+/*LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1280px){
+    .btn-menu{
+        display: none;/*TIRA BOTAO MENU*/
+    }
+    .btn-close{
+        display: none;/*TIRA BOTAO FECHAR MENU*/
+    }
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 56px;/*DEIXA ALINHADO TODO O TEXTO*/
+        float: right;
+        background-color: #f5f5f5;
+        display: block !important;/*IMPORTANT FORCA O DISPLAY A MOSTRAR O MENU*/
+        position: static;
+    }
+    .menu li{
+        padding: 0;/*COLOCA CADA ITEM DO MENU A ESQUERDA UM DO OUTRO*/
+        float: left;
+    }
+    .menu li a{
+        color: #130400;/*MUDA COR AUMENTA FONTE E DISTANCIA DE ITENS DO MENU*/
+        font-size: 1em;
+        padding: 15px;
+    }
+    .menu li a:hover{
+        border: none;/*TIRA BORDA E LETRAS FICAM LARANJA QUANDO PASSA MOUSE*/
+        color: #da6709;
+    }
+}
