@@ -95,23 +95,21 @@ img{
     float: right;
     margin-top: 2%;
 }
-.btn-cadastrar{
+
+.btn{/*OTIMIZAÇÃO DE CODIGO CRIA CLASSE BTN PARA REUTILIZAR CODIGO EM BTN CADASTRAR E BTN SORBE*/
     width: 100%;
     font-size: 1.5em;
     text-align: left;
     cursor: pointer;
     padding: 5%;
     border-radius: 10px;
+}
+.btn-cadastrar{
+
     background-color: #fff;
     color: #130400;
 }
 .btn-sobre{
-    width: 100%;
-    font-size: 1.5em;
-    text-align: left;
-    cursor: pointer;
-    padding: 5%;
-    border-radius: 10px;
     background-color: #130400;
     color: #fff;
     margin-top: 2%;
@@ -186,4 +184,28 @@ img{
     border-radius: 5px;
     cursor: pointer;
     margin-top: 2%;
+}
+
+/*RODAPE*/
+.rodape{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background: linear-gradient(to right,#ce2e3c,#da6709); /*COLOCA COR GRADIENTE NO RODAPE*/
+}
+.social-icons a{
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.7);
+    margin-right: 3%;
+}
+.social-icons a:last-child{
+    margin-right: 0;/*ZERA MARGEM DO ULTIMO ICONE DO RODAPE*/
+}
+.social-icons a:hover{
+    color: rgb(255,255,255);/*TIRA TRANPARENCIA QUANDO PASSA O MOUSE*/
+}
+.copyright{
+    margin-top: 2%;
+    color: rgba(255,255,255,0.7);
 }
